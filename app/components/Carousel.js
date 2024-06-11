@@ -31,8 +31,9 @@ const Carousel = (props) => {
       type   : 'loop'
     } }>
       {pureColor.map((color, index) => (
-          <SplideSlide key={index}>
+          <SplideSlide key={index} className='position-relative'>
             <img src={color} alt={`Image ${index}`} className='imgCarousel' />
+            <p className='position-absolute text-light top-0 start-50 translate-middle mt-5'>{color}</p>
           </SplideSlide>
       ))}
     </Splide>

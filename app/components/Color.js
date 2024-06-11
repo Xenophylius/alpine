@@ -87,7 +87,7 @@ const Color = (props) => {
     return (
       <div className='bg-dark bg-opacity-75'>
           <h3 className='text-light '>{props.arrayItem[0]}</h3>
-          <img src={props.arrayItem[1]} id='conduite' className='color mx-2 p-1 activeItem equipement' onClick={(e) => handleClick('conduite')}/>
+          <img src={props.arrayItem[1]} id='conduite' className='color mx-2 p-1 activeItem equipement position-relative' onClick={(e) => handleClick('conduite')}/>
           <img src={props.arrayItem[2]} id='confort' className='color mx-2 p-1 equipement' onClick={(e) => handleClick('confort')}/>
           <img src={props.arrayItem[3]} id='design' className='color mx-2 p-1 equipement' onClick={(e) => handleClick('design')}/>
           <img src={props.arrayItem[4]} id='media-nav' className='color mx-2 p-1 equipement' onClick={(e) => handleClick('media-nav')}/>

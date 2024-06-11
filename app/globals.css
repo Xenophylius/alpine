@@ -26,3 +26,7 @@ body {
 .activeItem {
   border: 3px solid whitesmoke !important; 
 }
+
+.equipement {
+  position: relative !important;
+}
