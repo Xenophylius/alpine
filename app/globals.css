@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.theCarousel {
+  height: 70vh !important;
+}
+
+.color {
+  height: 10vh !important;
+  
+}
+
+.imgCarousel {
+  height: 78vh !important;
+}
+
+.activeItem {
+  border: 3px solid whitesmoke !important; 
+}
