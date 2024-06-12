@@ -1,6 +1,6 @@
 import '@splidejs/react-splide/css/skyblue';
 import { useAppDispatch, useAppSelector } from '@/lib/hook';
-import { colorChoice, janteChoice, sellerieChoice, equipementChoice } from '@/lib/slice';
+import { colorChoice, janteChoice, sellerieChoice, equipementChoice, countEquipement, calculPricing, pushAriane } from '@/lib/slice';
 import { useRouter } from 'next/navigation'
 import activeItem from '../functions/activeItem';
 import activeItemEquipement from '../functions/activeItemEquipement';
@@ -48,17 +48,25 @@ const Color = (props) => {
 
   const routeClick = (c) => {
     if (props.type === 'colors') {
+      dispatch(pushAriane({link: '/configurator/colors', title: 'Couleur'}))
       router.push('/configurator/jantes')
     }
     if (props.type === 'jantes') {
+      dispatch(pushAriane({link: '/configurator/jantes', title: 'Jante'}))
       router.push('/configurator/sellerie')
     }
     if (props.type === 'sellerie') {
+      dispatch(pushAriane({link: '/configurator/sellerie', title: 'Sellerie'}))
       router.push('/configurator/equipements')
     }
     if (props.type === 'equipement') {
-      router.push('/configurator/accessoires')
+      dispatch(pushAriane({link: '/configurator/equipements', title: 'Equipement'}))
+      dispatch(pushAriane({link: '/configurator/recap', title: 'Récapitulatif'}))
+      dispatch(countEquipement())
+      dispatch(calculPricing())
+      router.push('/configurator/recap')
     }
+    
   }
 
   if (props.type === 'jantes' && model === 'legende' || props.type === 'colors') {
@@ -87,14 +95,36 @@ const Color = (props) => {
     return (
       <div className='bg-dark bg-opacity-75'>
           <h3 className='text-light '>{props.arrayItem[0]}</h3>
-          <img src={props.arrayItem[1]} id='conduite' className='color mx-2 p-1 activeItem equipement position-relative' onClick={(e) => handleClick('conduite')}/>
-          <img src={props.arrayItem[2]} id='confort' className='color mx-2 p-1 equipement' onClick={(e) => handleClick('confort')}/>
-          <img src={props.arrayItem[3]} id='design' className='color mx-2 p-1 equipement' onClick={(e) => handleClick('design')}/>
-          <img src={props.arrayItem[4]} id='media-nav' className='color mx-2 p-1 equipement' onClick={(e) => handleClick('media-nav')}/>
-          <img src={props.arrayItem[5]} id='perso-ext' className='color mx-2 p-1 equipement' onClick={(e) => handleClick('perso-ext')}/>
-          <img src={props.arrayItem[6]} id='perso-int' className='color mx-2 p-1 equipement' onClick={(e) => handleClick('perso-int')}/>
-          <img src={props.arrayItem[7]} id='securite' className='color mx-2 p-1 equipement' onClick={(e) => handleClick('securite')}/>
-          
+          <div className='row justify-content-center'>
+            <div className='col -1 position-relative ' onClick={(e) => handleClick('conduite')}>
+              <img src={props.arrayItem[1]} id='conduite' className='color mx-2 p-1 activeItem equipement position-relative' />
+              <p className='position-absolute bottom-0 start-50 translate-middle m-0 text-light fw-bold'>CONDUITE</p>
+            </div>
+            <div className='col -1 position-relative' onClick={(e) => handleClick('confort')}>
+              <img src={props.arrayItem[2]} id='confort' className='color mx-2 p-1 equipement ' />
+              <p className='position-absolute bottom-0 start-50 translate-middle m-0 text-light fw-bold'>CONFORT</p>
+            </div>
+            <div className='col -1 position-relative' onClick={(e) => handleClick('design')}>
+              <img src={props.arrayItem[3]} id='design' className='color mx-2 p-1 equipement' />
+              <p className='position-absolute bottom-0 start-50 translate-middle m-0 text-light fw-bold'>DESIGN</p>
+            </div>
+            <div className='col -1 position-relative '  onClick={(e) => handleClick('media-nav')}>
+              <img src={props.arrayItem[4]} id='media-nav' className='color mx-2 p-1 equipement'/>
+              <p className='position-absolute bottom-0 start-50 translate-middle m-0 text-light fw-bold'>MEDIA</p>
+            </div>
+            <div className='col -1 position-relative' onClick={(e) => handleClick('perso-ext')}>
+              <img src={props.arrayItem[5]} id='perso-ext' className='color mx-2 p-1 equipement' />
+              <p className='position-absolute bottom-0 start-50 translate-middle m-0 text-light fw-bold'>EXTERIEUR</p>
+            </div>
+            <div className='col -1 position-relative' onClick={(e) => handleClick('perso-int')}>
+              <img src={props.arrayItem[6]} id='perso-int' className='color mx-2 p-1 equipement' />
+              <p className='position-absolute bottom-0 start-50 translate-middle m-0 text-light fw-bold'>INERIEUR</p>
+            </div>
+            <div className='col -1 position-relative' onClick={(e) => handleClick('securite')}>
+              <img src={props.arrayItem[7]} id='securite' className='color mx-2 p-1 equipement' />
+              <p className='position-absolute bottom-0 start-50 translate-middle m-0 text-light fw-bold'>SECURITE</p>
+            </div>
+          </div>
           <button className="btn btn-primary col-12" onClick={() => routeClick()}>SUIVANT</button>
       </div>
     )

@@ -30,3 +30,23 @@ body {
 .equipement {
   position: relative !important;
 }
+
+.hoverMenu:hover {
+  border-bottom: 2px solid white;
+}
+
+.imgSection {
+  width: 400px !important;
+  height: 600px !important;
+  object-fit: cover;
+}
+
+.bgBlack {
+  background-color: #000;
+}
+
+.heigh100Vh {
+  height: 100vh !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}

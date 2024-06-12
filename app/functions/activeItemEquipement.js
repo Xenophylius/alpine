@@ -1,9 +1,5 @@
 function activeItemEquipement(c) {
-    const allEquipement = document.querySelectorAll('.equipement')
-    allEquipement.forEach((element) => {
-        element.classList.remove('activeItem')
-    })
-    document.querySelector('#' + c).classList.add('activeItem')
+    document.querySelector('#' + c).classList.toggle('activeItem')
 }
   
 export default activeItemEquipement
