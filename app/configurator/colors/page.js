@@ -9,7 +9,7 @@ export default function Colors() {
     const dispatch = useAppDispatch()
 
     return (
-    <div className="text-center ">
+    <div className="text-center">
             <Carousel/>  
             <Color arrayItem={colorsImg} type='colors'/>
     </div>

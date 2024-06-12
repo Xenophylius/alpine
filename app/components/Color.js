@@ -71,7 +71,7 @@ const Color = (props) => {
 
   if (props.type === 'jantes' && model === 'legende' || props.type === 'colors') {
     return (
-      <div className='bg-dark bg-opacity-75'>
+      <div className=''>
           <h3 className='text-light '>{props.arrayItem[0]}</h3>
           <img src={props.arrayItem[1]} id='whiteRef' className='color mx-2 p-1 activeItem' onClick={() => handleClick('blanc')}/>
           <img src={props.arrayItem[2]} id='blueRef' className='color mx-2 p-1' onClick={() => handleClick('bleu')}/>
@@ -81,7 +81,7 @@ const Color = (props) => {
     )
   } else if (props.type === 'sellerie') {
     return (
-      <div className='bg-dark bg-opacity-75'>
+      <div className=''>
           <h3 className='text-light '>{props.arrayItem[0]}</h3>
           <img src={props.arrayItem[1]} id='whiteRef' className='color mx-2 p-1 activeItem' onClick={() => handleClick('cuir brun')}/>
           <img src={props.arrayItem[2]} id='blueRef' className='color mx-2 p-1' onClick={() => handleClick('cuir noir')}/>
@@ -93,7 +93,7 @@ const Color = (props) => {
     )
   } else if (props.type === 'equipement') {
     return (
-      <div className='bg-dark bg-opacity-75'>
+      <div className=''>
           <h3 className='text-light '>{props.arrayItem[0]}</h3>
           <div className='row justify-content-center'>
             <div className='col -1 position-relative ' onClick={(e) => handleClick('conduite')}>
@@ -130,7 +130,7 @@ const Color = (props) => {
     )
   } else {
     return (
-      <div className='bg-dark bg-opacity-75'>
+      <div className=''>
           <h3 className='text-light '>{props.arrayItem[0]}</h3>
           <img src={props.arrayItem[1]} ref={whiteRef} id='whiteRef' className='color mx-2 p-1 activeItem' onClick={() => handleClick('blanc')}/>
           <img src={props.arrayItem[2]} ref={blueRef} id='blueRef' className='color mx-2 p-1' onClick={() => handleClick('bleu')}/>

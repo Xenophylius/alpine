@@ -36,24 +36,27 @@ export default function Recap() {
 
 
     return (
-    <div className="text-center text-capitalize ">
+    <div className="text-center text-capitalize mt-5 pt-5 text-light row align-items-center">
         <Ariane />
-        <img src={model} className="col-4"/>
+        <div className="col-6 mt-5">
+            <img src={model} className="col-12 rounded-circle"/>
+        </div>
+        <div className="col-6 mt-5">
         <p>Model : {recap.name} </p>
-        <p>Couleur : <img src={`../images/color/${recap.color}.jpg`} className="rounded-2" style={{width: 50 + 'px'}}/></p>
-        <p>Jantes : <img src={`../images/jantes/jante-${nameJantes}.jpg`} className="rounded-2" style={{width: 50 + 'px'}}/></p>
+        <p>Couleur  <img src={`../images/color/${recap.color}.jpg`} className="rounded-2 ms-2" style={{width: 50 + 'px'}}/></p>
+        <p>Jantes  <img src={`../images/jantes/jante-${nameJantes}.jpg`} className="rounded-2 ms-2" style={{width: 50 + 'px'}}/></p>
         <p>Sellerie : {recap.sellerie}</p>
-        <p>Equipements : </p>
+        <p>Equipements  </p>
         <ul className="list-inline mx-auto">
             {recap.equipement.map((equipement, index) => (
-                <li key={index} className="col-1 list-inline-item ">
+                <li key={index} className="col-2 list-inline-item ">
                     <img src={`../images/equipements/${equipement}.jpg`} className="rounded-2 mt-2" style={{width: 100 + 'px'}}/>
                     <p>{equipement} </p>
                 </li>
             ))}
         </ul>
         <p className="">Prix : {pricing} €</p>
-
+        </div>
     </div>
   );
   }

@@ -32,7 +32,12 @@ body {
 }
 
 .hoverMenu:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #245e97;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #245e97 !important;
+  font-weight: bold !important;
 }
 
 .imgSection {

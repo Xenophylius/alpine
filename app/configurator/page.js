@@ -10,8 +10,7 @@ export default function Configurator() {
 
     return (
     <Container className="text-center">
-        <h1>CONFIGURATOR</h1>
-        <div className="container-fluid my-5">
+        <div className="container-fluid my-5 py-5">
             <div className="row justify-content-evenly">
                 <Model model='pure'/>
                 <Model model='legende'/>

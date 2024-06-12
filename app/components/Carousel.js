@@ -35,8 +35,8 @@ const Carousel = (props) => {
     
 
   return (
-    <>
-    <Ariane />
+    <div className='mt-5 pt-5'>
+    <Ariane/>
     <Splide aria-label="My Favorite Images" className='position-relative' options={ {
       autoplay : true,
       type   : 'loop'
@@ -52,7 +52,7 @@ const Carousel = (props) => {
           </SplideSlide>
       ))}
     </Splide>
-    </>
+    </div>
   )
 }
 

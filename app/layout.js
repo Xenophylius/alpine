@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <StoreProvider>
     <html lang="en">
-      <body>
+      <body className="bgBlack">
       <nav class="navbar navbar-expand-lg position-fixed z-3">
         <div class="container-fluid">
           <Link href="/" className="mx-3 navbar-brand mt-1 me-5"><img src="./images/alpine/alpine-logo-1-removebg-preview.png" style={{width: 100 + 'px'}}/></Link>
