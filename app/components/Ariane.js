@@ -15,7 +15,7 @@ const Ariane = () => {
     <nav style={{styleNav}} aria-label="breadcrumb" className='ms-5'>
       <ol class="breadcrumb text-light">
         {ariane.map((link, index) => (
-            <li class="breadcrumb-item text-light"><a className='text-decoration-none text-light hoverMenu' href="#" onClick={() => navStyle(link.link)}>{link.title}</a></li>
+            <li class="breadcrumb-item text-light" key={`nav${index}`}><a className='text-decoration-none text-light hoverMenu' href="#" onClick={() => navStyle(link.link)}>{link.title}</a></li>
         ))}
       </ol>
     </nav>

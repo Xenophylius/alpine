@@ -50,6 +50,13 @@ body {
   width: 400px !important;
   height: 600px !important;
   object-fit: cover;
+  transition: .3s ease-in-out;
+  overflow: hidden;
+}
+
+.imgSection:hover {
+  transform: scale(1.03);
+  opacity: 0.7;
 }
 
 .bgBlack {
