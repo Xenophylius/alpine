@@ -8,14 +8,30 @@ import '@splidejs/react-splide/css/skyblue';
 export default function Home() {
   return (
     <>
-    <section className="container-fluid m-0 p-0 ">
-      <Splide aria-label="My Favorite Images" className="z-0">
+    <section className="container-fluid m-0 p-0 border-bottom border-2">
+      <Splide aria-label="My Favorite Images" className="z-0 position-relative">
+        <SplideSlide className="position-relative">
+          <video className="video" autoplay="true" muted="true" loop="true"><source src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/banners/mobile/alpine-teasing3-video-a290-hp-mobile.mp4.asset.mp4/3288366b89.mp4" /></video>
+          <div className="position-absolute top-50 start-0 translate-middle-y mx-5 px-5 text-light bw-bold ">
+            <h3>A290</h3>
+            <h6 className="mt-3">LE MANS - 13 JUNE 2024</h6>
+            <button className="btn btn-outline-light rounded-0 mt-4">RESTEZ INFORME</button>
+          </div>
+        </SplideSlide>
         <SplideSlide className="position-relative">
           <img style={{height : 100 + 'vh !important;', width : 100 + '%'}} src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/banners/desktop/alpine-autopromo-UK-008-desktop.jpg.ximg.largex2.webp/50561ac9a8.webp" alt="Image 1"/>
           <div className="position-absolute top-50 start-0 translate-middle-y mx-5 px-5 text-light bw-bold ">
             <h3>A110 R TURINI</h3>
             <h6 className="mt-3">LA PLUS RADICALE DES A110</h6>
             <button className="btn btn-light rounded-0 mt-4">DECOUVRIR</button>
+          </div>
+        </SplideSlide>
+        <SplideSlide className="position-relative">
+          <video className="video" autoplay="true" muted="true" loop="true"><source src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/banners/mobile/alpine-teasing2-video-alpenglow-hp-mobile.mp4.asset.mp4/93bcfc02ed.mp4" /></video>
+          <div className="position-absolute top-50 start-0 translate-middle-y mx-5 px-5 text-light bw-bold ">
+            <h3>ALPENGLOW</h3>
+            <h6 className="mt-3">SPA-FRANCORCHAMPS</h6>
+            <button className="btn btn-outline-light rounded-0 mt-4">DECOUVRIR</button>
           </div>
         </SplideSlide>
         <SplideSlide className="position-relative">
