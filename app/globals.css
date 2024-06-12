@@ -11,7 +11,7 @@ body {
 }
 
 .theCarousel {
-  height: 70vh !important;
+  height: 85vh !important;
 }
 
 .color {
@@ -20,7 +20,7 @@ body {
 }
 
 .imgCarousel {
-  height: 78vh !important;
+  height: 89vh !important;
 }
 
 .activeItem {
@@ -37,7 +37,7 @@ body {
 
 .video {
   width: 100% !important;
-  height: 100vh !important;
+  height: 89vh !important;
   object-fit: cover !important;
 }
 
