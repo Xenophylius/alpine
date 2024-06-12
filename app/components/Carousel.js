@@ -9,6 +9,8 @@ import Ariane from './Ariane';
 const Carousel = (props) => {
 
     const modelChoice = useAppSelector(state => state.counter.modelChoice)
+    const arrayPure = useAppSelector(state => state.counter.pureColor)
+    const arrayLegende =  useAppSelector(state => state.counter.legendeColor)
     const dispatch = useAppDispatch()
     const router = useRouter()
     const modelChoiceColor = useAppSelector(state => state.counter.modelChoice.color)
@@ -16,9 +18,9 @@ const Carousel = (props) => {
     let pureColor = []
 
     if (modelChoice.name === 'pure') {
-      pureColor = useAppSelector(state => state.counter.pureColor)
+      pureColor = arrayPure
     } else if (modelChoice.name === 'legende') {
-      pureColor = useAppSelector(state => state.counter.legendeColor)
+      pureColor = arrayLegende
     }
 
     if (props.type === 'jantes' && modelChoice.jante === 'standard') {
