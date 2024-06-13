@@ -119,8 +119,8 @@ export default function Home() {
             </div>
             <div className="col-12 pt-4 py-xl-0 row justify-content-center align-items-end position-relative ">
               <img className="imgSocMiddle text-center p-0 imgGray" src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/editorial/homepage-2024/alpine-homepage-009.jpg.ximg.largex2.webp/40aa9a6869.webp" />
-              <p className="btn btn-outline-light position-absolute bottom-0 end-0 mb-4 me-5 rounded-0 buttonInscription">S'INSCRIRE</p>
-              <div className="position-absolute top-0 mt-5 ms-5 text-light"><h4>NEWSLETTER</h4><p>Ne manquez rien de l’actualité Alpine</p></div>
+              <p className="btn btn-outline-light position-absolute bottom-0 end-0 mb-4 me-5 rounded-0 buttonInscription">INSCRIRE</p>
+              <div className="position-absolute top-0 mt-5 ms-5 text-light"><h4>NEWSLETTER</h4><p>Ne manquez rien des news Alpine</p></div>
             </div>
         </div>
         <div className="col-12 col-xl-4 py-4 py-xl-0 position-relative ">
