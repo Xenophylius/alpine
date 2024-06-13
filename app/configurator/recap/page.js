@@ -43,10 +43,10 @@ export default function Recap() {
         <p>Sellerie : {recapitulation.sellerie}</p>
         <p>Equipements  </p>
         <ul className="list-inline mx-auto">
-            {recapitulation.equipement.map((equipement, index) => (
+            {recapitulation.equipement.map((equip, index) => (
                 <li key={index} className="col-2 list-inline-item ">
-                    <img src={`../images/equipements/${equipement}.jpg`} className="rounded-2 mt-2" style={{width: 100 + 'px'}}/>
-                    <p>{equipement} </p>
+                    <img src={`../images/equipements/${equip}.jpg`} className="rounded-2 mt-2" style={{width: 100 + 'px'}}/>
+                    <p>{equip} </p>
                 </li>
             ))}
         </ul>
