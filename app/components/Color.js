@@ -71,29 +71,29 @@ const Color = (props) => {
 
   if (props.type === 'jantes' && model === 'legende' || props.type === 'colors') {
     return (
-      <div className=''>
+      <div className='pt-4'>
           <h3 className='text-light '>{props.arrayItem[0]}</h3>
           <img src={props.arrayItem[1]} id='whiteRef' className='color mx-2 p-1 activeItem' onClick={() => handleClick('blanc')}/>
           <img src={props.arrayItem[2]} id='blueRef' className='color mx-2 p-1' onClick={() => handleClick('bleu')}/>
           <img src={props.arrayItem[3]} id='blackRef' className='color mx-2 p-1 ' onClick={() => handleClick('noir')}/>
-          <button className="btn btn-primary col-12" onClick={() => routeClick()}>SUIVANT</button>
+          <button className="btn btn-primary col-12 position-fixed bottom-0 start-0" onClick={() => routeClick()}>SUIVANT</button>
       </div>
     )
   } else if (props.type === 'sellerie') {
     return (
-      <div className=''>
+      <div className='pt-4'>
           <h3 className='text-light '>{props.arrayItem[0]}</h3>
           <img src={props.arrayItem[1]} id='whiteRef' className='color mx-2 p-1 activeItem' onClick={() => handleClick('cuir brun')}/>
           <img src={props.arrayItem[2]} id='blueRef' className='color mx-2 p-1' onClick={() => handleClick('cuir noir')}/>
           <img src={props.arrayItem[3]} id='blackRef' className='color mx-2 p-1 ' onClick={() => handleClick('perfore')}/>
           <img src={props.arrayItem[4]} id='dinamicaRef' className='color mx-2 p-1 ' onClick={() => handleClick('dinamica')}/>
           
-          <button className="btn btn-primary col-12" onClick={() => routeClick()}>SUIVANT</button>
+          <button className="btn btn-primary col-12 position-fixed bottom-0 start-0" onClick={() => routeClick()}>SUIVANT</button>
       </div>
     )
   } else if (props.type === 'equipement') {
     return (
-      <div className=''>
+      <div className='pt-4'>
           <h3 className='text-light '>{props.arrayItem[0]}</h3>
           <div className='row justify-content-center'>
             <div className='col -1 position-relative ' onClick={(e) => handleClick('conduite')}>
@@ -125,16 +125,16 @@ const Color = (props) => {
               <p className='position-absolute bottom-0 start-50 translate-middle m-0 text-light fw-bold'>SECURITE</p>
             </div>
           </div>
-          <button className="btn btn-primary col-12" onClick={() => routeClick()}>SUIVANT</button>
+          <button className="btn btn-primary col-12 position-fixed bottom-0 start-0" onClick={() => routeClick()}>SUIVANT</button>
       </div>
     )
   } else {
     return (
-      <div className=''>
+      <div className='pt-4'>
           <h3 className='text-light '>{props.arrayItem[0]}</h3>
           <img src={props.arrayItem[1]} ref={whiteRef} id='whiteRef' className='color mx-2 p-1 activeItem' onClick={() => handleClick('blanc')}/>
           <img src={props.arrayItem[2]} ref={blueRef} id='blueRef' className='color mx-2 p-1' onClick={() => handleClick('bleu')}/>
-          <button className="btn btn-primary col-12" onClick={() => routeClick()}>SUIVANT</button>
+          <button className="btn btn-primary col-12 position-fixed bottom-0 start-0" onClick={() => routeClick()}>SUIVANT</button>
       </div>
     )
   }

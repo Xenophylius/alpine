@@ -17,5 +17,6 @@ export default function Configurator() {
             </div>
         </div>
     </Container>
+    
   );
   }

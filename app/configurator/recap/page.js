@@ -17,7 +17,7 @@ export default function Recap() {
     } else if (recap.jante === 'bleu'){
         nameJantes = 'Serac'
     } else if (recap.jante === 'noir'){
-        nameJantes = 'Legende'
+        nameJantes = 'legende'
     }
 
 
@@ -39,7 +39,7 @@ export default function Recap() {
     <div className="text-center text-capitalize mt-5 pt-5 text-light row align-items-center">
         <Ariane />
         <div className="col-6 mt-5">
-            <img src={model} className="col-12 rounded-circle"/>
+            <img src={model} className="col-10 rounded-2"/>
         </div>
         <div className="col-6 mt-5">
         <p>Model : {recap.name} </p>

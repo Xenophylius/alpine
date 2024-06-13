@@ -20,7 +20,7 @@ body {
 }
 
 .imgCarousel {
-  height: 89vh !important;
+  height: 60vh !important;
 }
 
 .activeItem {
@@ -46,17 +46,53 @@ body {
   font-weight: bold !important;
 }
 
+.buttonInscription {
+  width: 114.09px !important;
+  height: 38px !important;
+}
+
+.flag {
+  width: 33% !important;
+  height: 5px !important;
+}
+
+.imgHeader {
+  width: 100% !important;
+  height: 89vh !important;
+  object-fit: cover;
+}
+
 .imgSection {
-  width: 400px !important;
+  width: 100% !important;
   height: 600px !important;
   object-fit: cover;
   transition: .3s ease-in-out;
   overflow: hidden;
 }
 
-.imgSection:hover {
+/* .imgSection:hover {
   transform: scale(1.03);
   opacity: 0.7;
+} */
+
+.imgGray:hover {
+  filter: grayscale(60%);
+}
+
+.imghover {
+  transition: .3s ease-in-out;
+
+}
+
+.imghover:hover {
+  transition: .3s ease-in-out;
+  transform: scale(1.05);
+  opacity: 0.7;
+  
+}
+
+.divMax {
+  overflow:hidden !important;
 }
 
 .bgBlack {
@@ -66,5 +102,17 @@ body {
 .heigh100Vh {
   height: 100vh !important;
   width: 100% !important;
+  object-fit: cover !important;
+}
+
+.imgSoc {
+  height: 70vh !important;
+  width: 98% !important;
+  object-fit: cover !important;
+}
+
+.imgSocMiddle {
+  height: 34vh !important;
+  width: 98% !important;
   object-fit: cover !important;
 }
