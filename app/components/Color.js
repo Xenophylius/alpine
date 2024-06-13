@@ -132,8 +132,8 @@ const Color = (props) => {
     return (
       <div className='pt-4'>
           <h3 className='text-light '>{props.arrayItem[0]}</h3>
-          <img src={props.arrayItem[1]} ref={whiteRef} id='whiteRef' className='color mx-2 p-1 activeItem' onClick={() => handleClick('blanc')}/>
-          <img src={props.arrayItem[2]} ref={blueRef} id='blueRef' className='color mx-2 p-1' onClick={() => handleClick('bleu')}/>
+          <img src={props.arrayItem[1]} id='whiteRef' className='color mx-2 p-1 activeItem' onClick={() => handleClick('blanc')}/>
+          <img src={props.arrayItem[2]} id='blueRef' className='color mx-2 p-1' onClick={() => handleClick('bleu')}/>
           <button className="btn btn-primary col-12 position-fixed bottom-0 start-0" onClick={() => routeClick()}>SUIVANT</button>
       </div>
     )
