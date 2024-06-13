@@ -1,7 +1,14 @@
+@font-face {
+  font-family: "Alpine";
+  src: url("/fonts/alps-6.ttf");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Alpine, sans-serif";
+
 }
 
 html,
@@ -77,6 +84,7 @@ body {
 
 .imgGray:hover {
   filter: grayscale(60%);
+  opacity: 0.9;
 }
 
 .imghover {

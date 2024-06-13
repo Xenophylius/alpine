@@ -8,9 +8,9 @@ export default function Recap() {
     const pricing = useAppSelector((state) => state.counter.pricing)
     let nameJantes = ''
     if (recapitulation.jante === 'blanc') {
-        nameJantes = 'Standard'
+        nameJantes = 'standard'
     } else if (recapitulation.jante === 'bleu'){
-        nameJantes = 'Serac'
+        nameJantes = 'serac'
     } else if (recapitulation.jante === 'noir'){
         nameJantes = 'legende'
     }
