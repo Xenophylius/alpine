@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
     <section className="container-fluid m-0 p-0">
-      <Splide aria-label="My Favorite Images" className="z-0 position-relative m-0 p-0">
-        <SplideSlide className="position-relative m-0 p-0">
+      <Splide aria-label="My Favorite Images" className="z-0 position-relative m-0 p-0 border-bottom">
+        <SplideSlide className="position-relative m-0 p-0 heightSlide">
           <video className="video" autoplay="true" muted="true" loop="true"><source src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/banners/desktop/alpine-teasing3-video-a290-hp-desktop.mp4.asset.mp4/e8ba72fc99.mp4" /></video>
           <div className="position-absolute top-50 start-0 translate-middle-y mx-5 px-5 text-light bw-bold ">
             <h3 className="fw-bold">A290</h3>
@@ -18,7 +18,7 @@ export default function Home() {
             <button className="btn btn-outline-light rounded-0 mt-4">RESTEZ INFORME</button>
           </div>
         </SplideSlide>
-        <SplideSlide className="position-relative m-0 p-0">
+        <SplideSlide className="position-relative m-0 p-0 heightSlide">
           <img className="imgHeader" src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/banners/desktop/alpine-autopromo-UK-008-desktop.jpg.ximg.largex2.webp/50561ac9a8.webp" alt="Image 1"/>
           <div className="position-absolute top-50 start-0 translate-middle-y mx-5 px-5 text-light bw-bold ">
             <h3 className="fw-bold">A110 R TURINI</h3>
@@ -26,7 +26,7 @@ export default function Home() {
             <button className="btn btn-light rounded-0 mt-4">DECOUVRIR</button>
           </div>
         </SplideSlide>
-        <SplideSlide className="position-relative m-0 p-0">
+        <SplideSlide className="position-relative m-0 p-0 heightSlide">
           <video className="video" autoplay="true" muted="true" loop="true"><source src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/banners/desktop/alpine-teasing2-video-alpenglow-hp-desktop.mp4.asset.mp4/b0f702da0b.mp4" /></video>
           <div className="position-absolute top-50 start-0 translate-middle-y mx-5 px-5 text-light bw-bold ">
             <h3 className="fw-bold">ALPENGLOW</h3>
@@ -34,7 +34,7 @@ export default function Home() {
             <button className="btn btn-outline-light rounded-0 mt-4">DECOUVRIR</button>
           </div>
         </SplideSlide>
-        <SplideSlide className="position-relative m-0 p-0">
+        <SplideSlide className="position-relative m-0 p-0 heightSlide">
           <img className="imgHeader" src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/banners/desktop/alpine-A110s-hp-desktop.jpg.ximg.largex2.webp/87fab305ac.webp" alt="Image 2"/>
           <div className="position-absolute top-50 start-0 translate-middle-y mx-5 px-5 text-light bw-bold ">
             <h3 className="fw-bold">A110 S</h3>

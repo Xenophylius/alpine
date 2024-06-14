@@ -41,7 +41,8 @@ const Carousel = (props) => {
     <Ariane/>
     <Splide aria-label="My Favorite Images" className='position-relative' options={ {
       autoplay : true,
-      type   : 'loop'
+      type   : 'loop',
+      
     } }>
       {pureColor.map((color, index) => (
         title = color.split('/'),
