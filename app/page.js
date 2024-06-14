@@ -12,7 +12,7 @@ export default function Home() {
       <Splide aria-label="My Favorite Images" className="z-0 position-relative m-0 p-0 border-bottom">
         <SplideSlide className="position-relative m-0 p-0 heightSlide">
           <video className="video" autoplay="true" muted="true" loop="true"><source src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/banners/desktop/alpine-teasing3-video-a290-hp-desktop.mp4.asset.mp4/e8ba72fc99.mp4" /></video>
-          <div className="position-absolute top-50 start-0 translate-middle-y mx-5 px-5 text-light bw-bold ">
+          <div className="position-absolute top-50 top-sm-50 start-0 translate-middle-y mx-5 px-5 text-light bw-bold ">
             <h3 className="fw-bold">A290</h3>
             <h6 className="mt-3">LE MANS - 13 JUNE 2024</h6>
             <button className="btn btn-outline-light rounded-0 mt-4">RESTEZ INFORME</button>
@@ -47,27 +47,27 @@ export default function Home() {
 
     <section className="container-fluid m-0 p-0 position-relative">
       <img className="imgHeader" src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/editorial/homepage-2024/alpine-homepage-001-desktop.jpg.ximg.largex2.webp/c04dd679a2.webp" alt="Image 1"/>
-      <div className="position-absolute top-0 start-0 m-5 p-5  text-light bw-bold ">
+      <div className="position-absolute top-0 start-0 m-2 p-2 m-sm-5 p-sm-5 text-light bw-bold ">
             <h3 className="fw-bold">A110</h3>
             <h6 className="text-uppercase mt-3">Une icône de légèreté et de sportivité</h6>
             <button className="btn btn-outline-light rounded-0 mt-4">DECOUVRIR</button>
           </div>
     </section>
 
-    <section className="bgBlack m-0 p-0 border-bottom border-3">
-      <div className="row justify-content-evenly py-5 text-center mx-5">
-        <div className="col-12 col-xl-4 position-relative my-4 my-xl-0 divMax ">
+    <section className="bgBlack m-0 p-0 ">
+      <div className="row justify-content-evenly py-2 py-sm-5 text-center mx-1 mx-sm-5">
+        <div className="col-12 col-xl-4 position-relative my-2 my-xl-0 divMax ">
           <p className="position-absolute top-0 start-50 translate-middle-x fw-bold text-light mt-3 ">CONFIGURER ALPINE</p>
           <img className="imgSection imghover" src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/editorial/homepage-2024/alpine-homepage-002.jpg.ximg.largex2.webp/2ce92b218f.webp"/>
           <p className="btn btn-outline-light position-absolute bottom-0 start-50 translate-middle-x mb-2 rounded-0 ">CONFIGURER</p>
         </div>
-        <div className="col-12 col-xl-4 position-relative my-4 my-xl-0 divMax ">
+        <div className="col-12 col-xl-4 position-relative my-2 my-xl-0 divMax ">
           <p className="position-absolute top-0 start-50 translate-middle-x fw-bold text-light mt-3 ">NOUS RENDRE VISITE</p>
           <img className="imgSection imghover" src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/editorial/homepage-2024/alpine-homepage-003.jpg.ximg.largex2.webp/3a8a14e91e.webp"/>
           <p className="btn btn-outline-light position-absolute bottom-0 start-50 translate-middle-x mb-2 rounded-0 ">STORE</p>
         
         </div>
-        <div className="col-12 col-xl-4 position-relative my-4 my-xl-0 divMax ">
+        <div className="col-12 col-xl-4 position-relative my-2 my-xl-0 divMax ">
           <p className="position-absolute top-0 start-50 translate-middle-x fw-bold text-light mt-3 ">ESSAI</p>
           <img className="imgSection imghover" src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/editorial/homepage-2024/alpine-homepage-004.jpg.ximg.largex2.webp/521cc09a65.webp"/>
           <p className="btn btn-outline-light position-absolute bottom-0 start-50 translate-middle-x mb-2 rounded-0 ">CONTACTEZ-NOUS</p>
@@ -75,20 +75,17 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="bgBlack m-0 p-0 ">
-      <div className="row align-items-center ">
-        <div className="col-6 text-light ps-5">
-          <h1 className="fw-bold mb-3">FORMULE 1® </h1>
+    <section className="bgBlack m-0 p-0 border-top border-3">
+      <div className="row align-items-center">
+        <div className="col-6 text-light ps-3 ps-sm-5">
+          <h1 className="fw-bold mb-0 mb-sm-3">FORMULE 1® </h1>
           <p>L’agilité Alpine à la conquête des circuits de F1®</p>
-          <p className="btn btn-outline-light rounded-0 mt-4">DECOUVRIR</p>
-          
+          <p className="btn btn-outline-light rounded-0 mt-0 mt-sm-4">DECOUVRIR</p>
         </div>
         <div className="col-6 p-0">
           <img className="height100Vh w-100" src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/editorial/homepage-2024/alpine-homepage-005.jpg.ximg.largex2.webp/965b4bd838.webp" />
         </div>
-
       </div>
-
     </section>
 
     <section className="bgBlack m-0 p-0">
@@ -96,37 +93,38 @@ export default function Home() {
       <div className="col-6 p-0">
           <img className="height100Vh w-100" src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/editorial/homepage-2024/alpine-homepage-006.jpg.ximg.largex2.webp/6eaf56de72.webp" />
         </div>
-        <div className="col-6 text-light ps-5">
-          <h1 className="fw-bold mb-3">WEC </h1>
+        <div className="col-6 text-light ps-2 ps-sm-5">
+          <h1 className="fw-bold mb-0 mb-sm-3">WEC </h1>
           <p>Le savoir-faire technologique et design Alpine repousse les limites</p>
-          <p className="btn btn-outline-light rounded-0 mt-4">DECOUVRIR</p>
+          <p className="btn btn-outline-light rounded-0 mt-0 mt-sm-4">DECOUVRIR</p>
         </div>
       </div>
     </section>
+
     <section className="bgBlack m-0 p-0 border-top border-3">
       <h2 className="text-center text-light mt-4 fw-bold">LIFESTYLE</h2>
-      <div className="row justify-content-center my-5 px-5 mx-5">
-        <div className="col-12 col-xl-4 py-4 py-xl-0 position-relative imgGray">
+      <div className="row justify-content-center my-2 my-sm-5 px-2 px-sm-5 mx-2 mx-sm-5">
+        <div className="col-12 col-xl-4 py-2 py-xl-0 position-relative imgGray">
           <img className='imgSoc text-center ' src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/editorial/homepage-2024/alpine-homepage-007.jpg.ximg.largex2.webp/7f6a3aeab9.webp" />
-          <div className="position-absolute top-0 mt-5 ms-5 text-light"><h4 className="fw-bold">ALPINE X PADEL</h4><p>La rencontre de l’agilité et de la performance</p></div>
-          <p className="btn btn-outline-light position-absolute bottom-0 end-0 mb-4 me-5 rounded-0 ">DECOUVRIR</p>
+          <p className="btn btn-outline-light position-absolute bottom-0 end-0 mb-3 me-4 mb-sm-4 me-sm-5 rounded-0 ">DECOUVRIR</p>
+          <div className="position-absolute top-0 mt-4 ms-1 mt-sm-5 ms-sm-5 text-light"><h4 className="fw-bold">ALPINE X PADEL</h4><p className="mw-100">La rencontre de l’agilité et de la performance</p></div>
         </div>
-        <div className="col-12 col-xl-4 py-4 py-xl-0 row justify-content-center px-0">
-            <div className="col-12 pb-4 py-xl-0 position-relative imgGray">
+        <div className="col-12 col-xl-4 py-2 py-xl-0 row justify-content-center px-0">
+            <div className="col-12 pb-2 pb-sm-4 py-xl-0 position-relative imgGray">
               <img className="imgSocMiddle text-center " src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/editorial/homepage-2024/alpine-homepage-008.jpg.ximg.largex2.webp/905cc8ba64.webp" />
-              <p className="btn btn-outline-light position-absolute bottom-0 end-0 mb-4 me-5 rounded-0 ">DECOUVRIR</p>
-              <div className="position-absolute top-0 mt-5 ms-5 text-light"><h4 className="fw-bold">COLLECTIONS ALPINE</h4><p>Un style empreint de légèreté et de technicité</p></div>
+              <p className="btn btn-outline-light position-absolute bottom-0 end-0 mb-3 me-4 mb-sm-4 me-sm-5 rounded-0 ">DECOUVRIR</p>
+              <div className="position-absolute top-0 mt-4 ms-1 mt-sm-5 ms-sm-5 text-light"><h4 className="fw-bold">COLLECTIONS ALPINE</h4><p>Un style empreint de légèreté et de technicité</p></div>
             </div>
-            <div className="col-12 pt-4 py-xl-0 row justify-content-center align-items-end position-relative imgGray">
+            <div className="col-12 pt-2 pt-sm-4 py-xl-0 row justify-content-center align-items-end position-relative imgGray">
               <img className="imgSocMiddle text-center p-0 " src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/editorial/homepage-2024/alpine-homepage-009.jpg.ximg.largex2.webp/40aa9a6869.webp" />
-              <p className="btn btn-outline-light position-absolute bottom-0 end-0 mb-4 me-0 me-xl-5 rounded-0 buttonInscription">INSCRIRE</p>
-              <div className="position-absolute top-0 mt-5 ms-5 text-light"><h4 className="fw-bold">NEWSLETTER</h4><p>Ne manquez rien des news Alpine</p></div>
+              <p className="btn btn-outline-light position-absolute bottom-0 end-0 mb-2 me-4 mb-sm-4 me-sm-0 me-xl-5 rounded-0 buttonInscription">INSCRIRE</p>
+              <div className="position-absolute top-0 mt-4 ms-3 mt-sm-5 ms-sm-5 text-light"><h4 className="fw-bold">NEWSLETTER</h4><p>Ne manquez rien des news Alpine</p></div>
             </div>
         </div>
-        <div className="col-12 col-xl-4 py-4 py-xl-0 position-relative imgGray">
+        <div className="col-12 col-xl-4 py-2 py-xl-0 position-relative imgGray">
           <img className='imgSoc text-center ' src="https://cdn.group.renault.com/alp/master/alpine-new-cars/homepage/editorial/homepage-2024/alpine-homepage-010.jpg.ximg.largex2.webp/8ae1756532.webp" />
-          <p className="btn btn-outline-light position-absolute bottom-0 end-0 mb-4 me-5 rounded-0 ">DECOUVRIR</p>
-          <div className="position-absolute top-0 mt-5 ms-5 text-light"><h4 className="fw-bold">COLLABORATIONS ALPINE</h4><p>Projets et rencontres célébrant notre anticonformisme</p></div>
+          <p className="btn btn-outline-light position-absolute bottom-0 end-0 mb-3 me-4 mb-sm-4 me-sm-5 rounded-0 ">DECOUVRIR</p>
+          <div className="position-absolute top-0 mt-4 ms-1 mt-sm-5 ms-sm-5 text-light mw-100"><h4 className="fw-bold mw-100">COLLAB ALPINE</h4><p>Projets et rencontres célébrant notre anticonformisme</p></div>
         </div> 
       </div>
     </section>

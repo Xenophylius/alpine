@@ -1,9 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 import "bootstrap/dist/css/bootstrap.min.css";
 import StoreProvider from "./StoreProvider";
 import { NavLink } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,14 +17,14 @@ export default function RootLayout({ children }) {
     <StoreProvider>
     <html lang="en">
       <body className="bgBlack">
-      <nav class="navbar navbar-expand-lg position-fixed z-3">
+      <nav class="navbar navbar-expand-lg navbar-dark position-fixed z-3">
         <div class="container-fluid">
-          <NavLink href="/" className="mx-3 navbar-brand mt-1 me-5"><img src="./images/alpine/alpine-logo-1-removebg-preview.png" style={{width: 100 + 'px'}}/></NavLink>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <div class="navbar-nav">
+              <NavLink href="/" className="mx-3 navbar-brand mt-3 me-5"><img src="./images/alpine/logo-white.png" className="imgLogoMenu" /></NavLink>
               <NavLink href="/" className="mx-3 text-decoration-none mt-3 hoverMenu"><h4 className="fw-bold text-light ">HOME</h4></NavLink>
               <NavLink href="/configurator" className="mx-3 text-decoration-none mt-3 hoverMenu"><h4 className="fw-bold text-light ">CONFIGURATOR</h4></NavLink>
             </div>
@@ -32,7 +32,8 @@ export default function RootLayout({ children }) {
         </div>
       </nav>
       <main>{children}</main>
-      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
         </body>
     </html>
     </StoreProvider>
